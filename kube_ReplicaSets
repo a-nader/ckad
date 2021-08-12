@@ -8,4 +8,7 @@ kubectl scale replicaset new-replica-set --replicas=2
 kubeset edit replicaset new-replica-set
 
 --- Name space 
+-- change default namespace 
 kubectl config set-context $(kubectl config current context) --namespace=dev
+-- list all pods in all names 
+kubectl get pods --all-namespaces
