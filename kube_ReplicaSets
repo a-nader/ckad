@@ -6,3 +6,6 @@ kubectl replace -f replicaset-definition.yaml
 kubectl scale --replicas=6 replicaset-definition.yaml
 kubectl scale replicaset new-replica-set --replicas=2 
 kubeset edit replicaset new-replica-set
+
+--- Name space 
+kubectl config set-context $(kubectl config current context) --namespace=dev
