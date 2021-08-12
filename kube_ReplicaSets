@@ -5,7 +5,9 @@ kubectl apply -f replicaset-definition.yaml
 kubectl replace -f replicaset-definition.yaml
 kubectl scale --replicas=6 replicaset-definition.yaml
 kubectl scale replicaset new-replica-set --replicas=2 
-kubeset edit replicaset new-replica-set
+kubectl edit replicaset new-replica-set
+kubectl run redis --image=redis --namespace=finance #create from image
+
 
 --- Name space 
 -- change default namespace 
