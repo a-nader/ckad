@@ -2,5 +2,6 @@ kubectl create -f replicaset-definition.yml
 kubectl get replicaset
 kubectl delete replicaset myapp-replicaset 
 kubectl replace -f replicaset-definition.yml
-kubectl scale -replicas=6 replicaset-definition.yml
+kubectl scale --replicas=6 replicaset-definition.yml
+ kubectl scale replicaset new-replica-set --replicas=2 
 kubeset edit replicaset new-replica-set
