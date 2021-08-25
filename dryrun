@@ -88,3 +88,8 @@ kubectl create secret generic --from-file=app.properties (app.properties in Key:
 kubectl create -f secret-data.yaml 
 --
 
+
+
+
+
+kubectl -n elastic-stack exec -it app -- cat /log/app.log
