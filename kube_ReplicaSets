@@ -14,3 +14,6 @@ kubectl run redis --image=redis --namespace=finance #create from image
 kubectl config set-context $(kubectl config current context) --namespace=dev
 -- list all pods in all names 
 kubectl get pods --all-namespaces
+
+
+kubectl get all --selector env=prod,bu=finance,tier=frontend
