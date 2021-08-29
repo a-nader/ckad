@@ -1,0 +1,1 @@
+kubectl expose deployment simple-webapp-dep --name=webapp-service --target=port=8080 --type=nodePort --port=8080 --dry-run=client -o yaml > service.yaml
